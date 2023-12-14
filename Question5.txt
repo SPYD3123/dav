@@ -29,7 +29,7 @@ print()
 
 print("(d) Scatter plot for Petal Length vs Sepal Length")
 plt.figure(figsize=(6, 4))
-sns.scatterplot(x=data['sepal length (cm)'], y=data['petal length (cm)'], hue=data['target'])
+sns.regplot(x=data['sepal length (cm)'], y=data['petal length (cm)'], scatter=True, color='red')
 plt.xlabel('Sepal Length (cm)')
 plt.ylabel('Petal Length (cm)')
 plt.title('Scatter Plot: Petal Length vs Sepal Length')
